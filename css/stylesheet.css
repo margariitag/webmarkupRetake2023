@@ -1,0 +1,14 @@
+/*PC*/
+@media screen and (min-width: 1280px) {
+body{
+    background-color: rebeccapurple;
+}
+}
+/* Tablet*/
+@media screen and (min-width: 481px) and (max-width: 1279px) {
+
+}
+/* Mobile*/
+@media screen and (max-width: 480px) {
+
+}
