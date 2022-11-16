@@ -92,8 +92,8 @@ aside{
 }
 aside{
     width: 30%;
-    margin-top: 1px;
 }
+
 .Product1Img, .Product2Img, .Product3Img{
     float: right;
 }
@@ -105,6 +105,7 @@ aside{
     display: flex;
     flex-direction: row-reverse;
 }
+
 
 }
 /* Tablet*/
@@ -118,7 +119,6 @@ aside{
 
 .mainPage{
     display: flex;
-
 }
 .top{
     display: flex;
@@ -133,22 +133,31 @@ video{
 .articles{
     order: 3;
 }
+.Product1{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    order: 3;
+}
+.Product2{
+    order: 2;
+}
+.Product3{
+    order: 1;
+}
 .Product1, .Product2, .Product3{
     width: 100%;
-    float: right;
-}
-article{
-    display: flex;
-    flex-direction: column-reverse;
+    float: left;
 }
 
 em{
     float: left;
 }
-
 .Product1Img, .Product2Img, .Product3Img{
     float: left;
 }
+
 }
 
 /* Mobile*/
@@ -157,6 +166,31 @@ video{
     display: none;
     visibility: hidden;
 }
+figcaption{
+    font-size: 8px;
+}
+#logo{
+    width: 40px;
+} 
+#header{
+    font-size: 23px;
+}
+
+#payoff{
+    line-height: 20px;
+    font-size: 15px;
+}
+aside{
+    align-items: center;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    word-spacing: 5px;
+    font-size: 15px;
+}
+.articles{
+    font-size: 15px;
+}
+
 /*Hamburger menu*/
 #menuToggle {
     display: block;
@@ -170,18 +204,18 @@ video{
 
 #menuToggle a {
     text-decoration: none;
-    color: #460257;
+    color:#F4CCCC;
     transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
-    color: #D89BFF;
+    color: #FB9F9F;
 }
 
 #menuToggle input {
     display: block;
-    width: 40px;
-    height: 32px;
+    width: 20px;
+    height: 20px;
     position: absolute;
     top: -7px;
     left: -5px;
@@ -193,11 +227,11 @@ video{
 
 #menuToggle span {
     display: block;
-    width: 80px;
-    height: 20px;
+    width: 30px;
+    height: 5px;
     margin-bottom: 5px;
     position: relative;
-    background: #D89BFF;
+    background:#C27BA0;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -217,7 +251,7 @@ video{
 #menuToggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #460257;
+    background: #F4CCCC;
 }
 
 #menuToggle input:checked~span:nth-last-child(3) {
@@ -231,11 +265,11 @@ video{
 
 #menu {
     position: absolute;
-    width: 700px;
+    width: 100%;
     margin: -120px 0 0 -90px;
     padding: 50px;
-    padding-top: 125px;
-    background: #D89BFF;
+    padding-top: 40px;
+    background: #C27BA0;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -245,7 +279,7 @@ video{
 
 #menu li {
     padding: 10px 0;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 #menuToggle input:checked~ul {
@@ -255,4 +289,50 @@ nav{
     background-color: #f3f6f4;;
 }
 /*Hamburger menu end*/
+
+/*Index.html*/
+
+.mainPage{
+    display: flex;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+}
+aside{
+    order: 1;
+}
+video{
+    order: 2;
+}
+.articles{
+    order: 3;
+}
+.Product1{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    order: 3;
+}
+.Product2{
+    order: 2;
+}
+.Product3{
+    order: 1;
+}
+.Product1, .Product2, .Product3{
+    width: 100%;
+    float: left;
+}
+
+em{
+    float: left;
+}
+.Product1Img, .Product2Img, .Product3Img{
+    float: left;
+}
+.pageHeader{
+    display: flex;
+}
 }
