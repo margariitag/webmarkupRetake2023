@@ -79,6 +79,9 @@ aside{
     line-height: 30px;
     word-spacing: 10px;
 }
+#header{
+    font-size: 35px;
+}
 
 
 /*PC*/
@@ -107,6 +110,7 @@ aside{
     display: flex;
     flex-direction: row-reverse;
 }
+/*Product*/
 
 
 }
