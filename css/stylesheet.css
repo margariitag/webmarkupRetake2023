@@ -82,7 +82,13 @@ aside{
 #header{
     font-size: 35px;
 }
-
+#footerTable{
+    font-size: 12px;
+}
+.intro{
+    width: 100%;
+    text-align: center;
+}
 
 /*PC*/
 @media screen and (min-width: 1280px) {
@@ -90,6 +96,10 @@ aside{
     display: none;
     visibility: hidden;
 }
+#product1img, #product2img, #product3img{
+    width: 300px;
+}
+
 /*Index*/
 .articles{
     width: 60%;
@@ -111,9 +121,39 @@ aside{
     flex-direction: row-reverse;
 }
 /*Product*/
+/*.articlesGrid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(7, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    }
 
+    .VirtualReality { grid-area: 1 / 1 / 3 / 2; } 
+    .FlyingDrones { grid-area: 3 / 1 / 8 / 2; } 
+    .AI { grid-area: 1 / 2 / 7 / 3; } 
+    .Graphics{ grid-area: 1 / 3 / 4 / 4; } 
+    .EdgeDetector{ grid-area: 4 / 3 / 7 / 4; } 
+    .Graphics { grid-area: 7 / 2 / 8 / 4; } 
+*/
+
+/*pricing.html*/
+
+.pricingMain{
+    display: flex;
+}
+.tableWithFooter{
+    display: flex;
+    flex-direction: column;
+}
+.table{
 
 }
+.asideImagesPricing{
+    display: flex;
+}
+}
+
 /* Tablet*/
 @media screen and (min-width: 481px) and (max-width: 1279px) {
 
@@ -163,6 +203,38 @@ em{
 .Product1Img, .Product2Img, .Product3Img{
     float: left;
 }
+/*pricing.html*/
+#product1img{
+    display: none;
+    visibility: hidden;
+}
+#product3img{
+    width: 450px; 
+}
+#product2img{
+    width: 474px;
+}
+.pricingMain{
+    display: flex;
+    flex-direction: column;
+}
+.footerPricing{
+    display: flex;
+    justify-content: space-around;
+}
+.tableWithFooter{
+    display: flex;
+    flex-direction: column;
+}
+.table{
+
+}
+.asideImagesPricing{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
 
 }
 
