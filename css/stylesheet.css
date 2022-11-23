@@ -90,6 +90,23 @@ aside{
     text-align: center;
 }
 
+table {
+    border-color: #af2c79;
+    border-style: double;
+    border-width: 5px;
+}
+td{
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #eadfe5;
+}
+th {
+    background-color: #d7bacb;
+    color:#ffffff;
+    text-transform: uppercase;
+  }
+
 /*PC*/
 @media screen and (min-width: 1280px) {
 #checkbox{
@@ -146,11 +163,9 @@ aside{
     display: flex;
     flex-direction: column;
 }
-.table{
-
-}
 .asideImagesPricing{
     display: flex;
+    flex-direction: column;
 }
 }
 
@@ -206,35 +221,26 @@ em{
 /*pricing.html*/
 #product1img{
     display: none;
-    visibility: hidden;
 }
 #product3img{
-    width: 450px; 
+    width: 253px;
 }
 #product2img{
-    width: 474px;
+    width: 290px;
 }
 .pricingMain{
     display: flex;
     flex-direction: column;
 }
-.footerPricing{
-    display: flex;
-    justify-content: space-around;
-}
 .tableWithFooter{
     display: flex;
     flex-direction: column;
 }
-.table{
-
-}
 .asideImagesPricing{
     display: flex;
-    flex-direction: column-reverse;
+    align-items: center;
+    width: 50%;
 }
-
-
 
 }
 
